@@ -42,7 +42,7 @@ CREATE TABLE `player` (
   PRIMARY KEY (`id`),
   KEY `FKdvd6ljes11r44igawmpm1mc5s` (`team_id`),
   CONSTRAINT `FKdvd6ljes11r44igawmpm1mc5s` FOREIGN KEY (`team_id`) REFERENCES `team` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -51,7 +51,7 @@ CREATE TABLE `player` (
 
 LOCK TABLES `player` WRITE;
 /*!40000 ALTER TABLE `player` DISABLE KEYS */;
-INSERT INTO `player` VALUES (1,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL),(2,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL),(3,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL),(4,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL);
+INSERT INTO `player` VALUES (1,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL),(2,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL),(3,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL),(4,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL),(5,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL),(6,24,15000,'Seniorteam','Viratdemo@gmail.com','Demo','\0',NULL);
 /*!40000 ALTER TABLE `player` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -67,7 +67,7 @@ CREATE TABLE `team` (
   `maximum_budget` double NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -76,7 +76,7 @@ CREATE TABLE `team` (
 
 LOCK TABLES `team` WRITE;
 /*!40000 ALTER TABLE `team` DISABLE KEYS */;
-INSERT INTO `team` VALUES (1,15000,'Demo'),(2,15000,'Demo'),(3,15000,'Demo'),(4,15000,'Demo');
+INSERT INTO `team` VALUES (1,15000,'Demo'),(2,15000,'Demo'),(3,15000,'Demo'),(4,15000,'Demo'),(5,15000,'Demo'),(6,15000,'Demo');
 /*!40000 ALTER TABLE `team` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -93,7 +93,7 @@ CREATE TABLE `user` (
   `role` varchar(255) DEFAULT NULL,
   `username` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +102,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'$2a$10$qhWvyqaTq6xIN4JnNg2fduKiU7QxEZ7THYeH6W3l4hG/d5N2Yla7.','ADMIN','admin'),(2,'$2a$10$C8RbUhJrBZr4c7KOIxwHLuIRZXdoLDgoQ3NTjiS0lXNZqG7K7zZHS','ADMIN','admin'),(3,'$2a$10$yb.989QW.w3XXInwo0A2m.JiKfJvHeU2Pxi7cfuWt27PUAeiz29xm','ADMIN','admin'),(4,'$2a$10$9DLaj6F4ssCvCMKyr4IqN.StU6Ui4yUBxo2UqbatYGmzMP4bXoKEO','ADMIN','admin');
+INSERT INTO `user` VALUES (1,'$2a$10$qhWvyqaTq6xIN4JnNg2fduKiU7QxEZ7THYeH6W3l4hG/d5N2Yla7.','ADMIN','admin'),(2,'$2a$10$C8RbUhJrBZr4c7KOIxwHLuIRZXdoLDgoQ3NTjiS0lXNZqG7K7zZHS','ADMIN','admin'),(3,'$2a$10$yb.989QW.w3XXInwo0A2m.JiKfJvHeU2Pxi7cfuWt27PUAeiz29xm','ADMIN','admin'),(4,'$2a$10$9DLaj6F4ssCvCMKyr4IqN.StU6Ui4yUBxo2UqbatYGmzMP4bXoKEO','ADMIN','admin'),(5,'$2a$10$VadCffSvRaKSiZLzKVF7cOyk78GI7WeV8BXHYVxWrKvRt8wzrgpYS','ADMIN','admin'),(6,'$2a$10$PZH0p3ZddS7TSOcAp5RSveg/nGAItPB6PfC1vfZyvjLKfjDfcfs7i','ADMIN','admin');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -115,4 +115,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-01-24 10:29:37
+-- Dump completed on 2024-01-24 10:33:16
